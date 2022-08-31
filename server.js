@@ -21,9 +21,10 @@ async function main() {
   //   app.use(bodyParser.urlencoded({extended: false}));
 
   app.use(express.static(__dirname + "/public"));
+  app.set('views', './views');
   app.set("view engine", "ejs");
   app.get("/", async (req, res) => {
-    res.render("index.ejs");
+    res.render("index");
   });
 
   app.get("/thumbnail", async (req, res) => {
