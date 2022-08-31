@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "ashok020",
+  "start" : "node server.js",
+  "author": "abhinay",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2",
